@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYU_DMS23 HealthCare</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="welcomeScreen">
+    <h1>Welcome to NYU_DMS23 HealthCare Center</h1>
+    <button id="loginButton">Login</button>
+    <button id="guestButton">Guest</button>
+</div>
+
+<div id="loginScreen" style="display:none;">
+    <input type="text" id="ssn" placeholder="SSN">
+    <input type="password" id="password" placeholder="Password">
+    <button id="submitLogin">Submit</button>
+    <p id="loginError" style="display:none;">Error</p>
+</div>
+
+<div id="serviceSelectionScreen" style="display:none;">
+    <select id="serviceSelection">
+        <option value="">Select Service</option>
+        <option value="KidneyDisease">Predicting Kidney Disease</option>
+        <option value="Obesity">Checking Obesity</option>
+        <option value="HeartRate">HeartRate Issue</option>
+    </select>
+    <div id="inputFields"></div>
+</div>
+
+<button id="mainButton" style="display:none;">Main</button>
+
+<script src="script.js"></script>
+</body>
+</html>
